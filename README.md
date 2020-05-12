@@ -1,24 +1,18 @@
-# binom_test
+# Binom test
 
-## Project setup
-```
-yarn install
-```
+Ссылка на демо: [solovev.github.io](https://solovev.github.io/binom_mdb_dist/).
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
+## Запуск
 ```
-yarn build
+$ git clone https://github.com/solovev/binom_mdb.git
+$ cd binom_mdb
+$ npm install && npm run serve
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+Адрес: [http://localhost:8080/](http://localhost:8080/ ).
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Зависимости (кроме тех, которыми поделился vue cli)
+* `axios` - Для HTTP запросов
+* `vue-infinite-scroll` - Отображение "бесконечного" списка
+* `normalize-scss`
