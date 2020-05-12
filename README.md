@@ -16,3 +16,6 @@ $ npm install && npm run serve
 * `axios` - Для HTTP запросов
 * `vue-infinite-scroll` - Отображение "бесконечного" списка
 * `normalize-scss`
+
+### API
+themoviedb.org (3 версия)
