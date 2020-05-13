@@ -30,10 +30,10 @@ export default {
   mixins: [MediaQueryMatchMixin], // Expose "isWideScreen" property
   components: { MovieCard, Loader },
   created () {
-    this.loadMore()
+    this.loadMoviesIfEmpty()
   },
   watch: {
-    $route: 'loadMore'
+    $route: 'loadMoviesIfEmpty'
   },
   computed: {
     chunks () {
@@ -61,6 +61,11 @@ export default {
   methods: {
     getChunkKey (chunk) {
       return chunk.join()
+    },
+    loadMoviesIfEmpty () {
+      if (this.movies.length > 0) return
+
+      this.loadMore()
     },
     ...mapActions({
       loadMore: LOAD_MOVIES

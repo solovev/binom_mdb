@@ -43,20 +43,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  $polygon: polygon(0 0, 0 100%, 100% 0);
-  @supports (clip-path: $polygon) {
-    &::before {
-      // content: "";
-      position: fixed;
-      z-index: -1;
-      left: 0;
-      right: 0;
-      height: 356px;
-      background-color: $primary-color;
-      clip-path: $polygon;
-    }
-  }
-
   .logo {
     position: fixed;
     z-index: 1;
